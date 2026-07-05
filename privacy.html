@@ -48,7 +48,7 @@
   <body>
     <div class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 5 July 2026</p>
+      <p class="updated">Last updated: 6 July 2026</p>
 
       <p>
         Happy Squid is a website blocker. Its single purpose is to block websites
@@ -62,7 +62,10 @@
         <li>your natural-language rules and exceptions;</li>
         <li>your settings and preferences;</li>
         <li>your chat conversations with the AI;</li>
-        <li>a log of pages you visit on watched sites (URLs, page titles, visit times).</li>
+        <li>
+          a log of pages you visit (URLs, page titles, visit times) — on the sites you
+          block or watch, and on any site while an AI task session is active.
+        </li>
       </ul>
 
       <h2>Data sent off your device</h2>
@@ -83,16 +86,18 @@
       <p>
         Your requests are routed through OpenRouter to an underlying model provider.
         OpenRouter does not store the content of your requests — only anonymous metadata
-        such as token counts — and we route only to providers that do not train on your
-        data. Our own backend likewise stores only per-request metadata (token counts,
-        cost, and a hashed IP), never the content of your requests.
+        such as token counts (see the
+        <a href="https://openrouter.ai/privacy">OpenRouter privacy policy</a>). Every
+        request also carries OpenRouter's "deny data collection" routing flag, so it is
+        only served by model providers that do not store or train on your data.
       </p>
 
       <h2>Bug reports (optional)</h2>
       <p>
-        If you use "Report a bug", a snapshot of your entire Happy Squid storage is sent
-        to and stored on our backend with your description. This happens only when you
-        explicitly choose to submit a report and agree to it.
+        If you use "Report a bug", your description plus a snapshot of your Happy Squid
+        storage — your settings, rules, visit log, and AI chats — is sent to and stored
+        on our backend so we can reproduce the issue. Nothing is ever reported
+        automatically: a report is sent only when you write one and press Send.
       </p>
 
       <h2>What we don't do</h2>
@@ -111,7 +116,9 @@
       <h2>Data retention &amp; deletion</h2>
       <p>
         On-device data is removed when you delete it in the extension or uninstall Happy
-        Squid. Backend cost-metering records are retained only for accounting.
+        Squid. Backend cost-metering records are retained only for accounting. Bug
+        reports are kept only as long as needed to fix the issue — email us to have
+        yours deleted.
       </p>
 
       <h2>Contact</h2>
