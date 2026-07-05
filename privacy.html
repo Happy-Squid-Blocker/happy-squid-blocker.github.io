@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Squid — Privacy Policy</title>
+    <style>
+      body {
+        margin: 0;
+        font-family:
+          "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #16323a;
+        background: #f6fbfb;
+        line-height: 1.65;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 24px 96px;
+      }
+      h1 {
+        font-size: 30px;
+        margin: 0 0 4px;
+      }
+      .updated {
+        color: #5b7178;
+        margin: 0 0 28px;
+      }
+      h2 {
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #0e7c86;
+        margin: 32px 0 6px;
+      }
+      p {
+        margin: 8px 0;
+      }
+      ul {
+        margin: 8px 0;
+        padding-left: 22px;
+      }
+      a {
+        color: #0e7c86;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 24px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="./index.html">← Happy Squid</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 5 July 2026</p>
+
+      <p>
+        Happy Squid is a website blocker. Its single purpose is to block websites
+        according to rules that the user can specify in natural language.
+      </p>
+
+      <h2>Data stored on your device</h2>
+      <p>Stored locally (chrome.storage) and not transmitted except as described below:</p>
+      <ul>
+        <li>the websites and categories you block;</li>
+        <li>your natural-language rules and exceptions;</li>
+        <li>your settings and preferences;</li>
+        <li>your chat conversations with the AI;</li>
+        <li>a log of pages you visit on watched sites (URLs, page titles, visit times).</li>
+      </ul>
+
+      <h2>Data sent off your device</h2>
+      <p>
+        To power the AI gatekeeper and decide whether to grant access, we send the
+        relevant parts of the above — the current page URL and title, your recent visit
+        log, your chat messages, and your rules and preferences — to our own backend
+        (hosted on Supabase), which forwards them to our AI provider (OpenRouter) and the
+        model providers it routes to. All transmission is encrypted via HTTPS.
+      </p>
+      <p>
+        We do not store the contents of these requests. Our backend records only
+        per-request metadata — token count, inference cost, and a one-way hashed IP
+        address — to track our costs. Your raw IP address is never stored.
+      </p>
+
+      <h2>AI provider data handling</h2>
+      <p>
+        Your requests are routed through OpenRouter to an underlying model provider.
+        OpenRouter does not store the content of your requests — only anonymous metadata
+        such as token counts — and we route only to providers that do not train on your
+        data. Our own backend likewise stores only per-request metadata (token counts,
+        cost, and a hashed IP), never the content of your requests.
+      </p>
+
+      <h2>Bug reports (optional)</h2>
+      <p>
+        If you use "Report a bug", a snapshot of your entire Happy Squid storage is sent
+        to and stored on our backend with your description. This happens only when you
+        explicitly choose to submit a report and agree to it.
+      </p>
+
+      <h2>What we don't do</h2>
+      <p>
+        We have no user accounts. We do not sell or transfer your data to third parties,
+        do not use it for advertising or profiling, and do not use it to determine
+        creditworthiness or for lending.
+      </p>
+
+      <h2>Limited use</h2>
+      <p>
+        Happy Squid's collection and use of information adheres to the Chrome Web Store
+        User Data Policy, including the Limited Use requirements.
+      </p>
+
+      <h2>Data retention &amp; deletion</h2>
+      <p>
+        On-device data is removed when you delete it in the extension or uninstall Happy
+        Squid. Backend cost-metering records are retained only for accounting.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions or data requests: <a href="mailto:jimmaar1@gmail.com">jimmaar1@gmail.com</a></p>
+    </div>
+  </body>
+</html>
